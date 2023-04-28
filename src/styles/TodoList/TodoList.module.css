@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 180px);
+    border-bottom: 2px solid var(--todo-primary);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+}
+
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+
+.tableHeader {
+    top: 0px;
+    background-color: var(--todo-primary);
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.3em;
+    position: sticky;
+}
+
+.tableRow {
+    border-bottom: 1px solid #dddddd;
+    font-size: 1em;
+}
+
+.tableRow:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tableCell {
+    padding: 12px 15px;
+}
+
+.tableEditCell {
+    padding: 4px 15px;
+}
+
+.tableCell:nth-child(1) {
+    width: 200px;
+}
+
+.tableEditInput {
+    width: 100%;
+    padding: 8px 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid silver;
+    font-size: 1rem;
+}
+
+.tableEditInput:focus {
+    outline: none;
+}
+
+.error {
+    border-bottom: 1px solid var(--todo-error);
+}
+
+.tableIcon {
+    width: 48px;
+    text-align: center;
+}
+
+.tableIcon > * {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: silver
+}
+
+@media screen and (max-width: 600px) {
+    .tableCell:nth-child(1) {
+        width: auto;
+    }
+
+    .tableIcon {
+        width: 24px;
+    }
+}

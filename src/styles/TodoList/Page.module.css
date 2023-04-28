@@ -1,0 +1,25 @@
+.page {
+    width: auto;
+    height: 100vh;
+    max-width: 1048px;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    margin: 1rem 0;
+    color: var(--todo-primary);
+    font-family: sans-serif;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+    .page {
+        margin: 0 1rem;
+    }
+}
